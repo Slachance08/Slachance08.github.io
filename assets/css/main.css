@@ -2360,3 +2360,94 @@ body {
     animation: none;
   }
 }
+/* Parcours : formation et expérience */
+
+#parcours section + section {
+  margin-top: 2.5em;
+}
+
+#parcours h3 {
+  margin-bottom: 1.25em;
+}
+
+#parcours h4 {
+  margin: 0 0 0.6em;
+  color: #16354a;
+  font-size: 1.15em;
+  line-height: 1.4;
+}
+
+#parcours p {
+  margin-bottom: 0.75em;
+  line-height: 1.65;
+}
+
+/* Frise de formation */
+
+#parcours .parcours-frise {
+  list-style: none;
+  margin: 0 0 0 8px;
+  padding: 0 0 0 28px;
+  border-left: 2px solid #7896a8;
+}
+
+#parcours .parcours-frise > li {
+  position: relative;
+  padding: 0 0 2em;
+}
+
+#parcours .parcours-frise > li:last-child {
+  padding-bottom: 0;
+}
+
+#parcours .parcours-frise > li::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -36px;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #dce7ee;
+  border-radius: 50%;
+  background: #16354a;
+}
+
+#parcours .parcours-date {
+  margin-bottom: 0.5em;
+  color: #405e70;
+  font-size: max(14px, 0.85em);
+  font-weight: 600;
+}
+
+/* Expérience universitaire */
+
+#parcours .parcours-poste {
+  padding: 1.25em 1.5em;
+  border-left: 3px solid #28556e;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0 8px 8px 0;
+}
+
+#parcours .parcours-poste ul {
+  margin: 1em 0 0;
+  padding-left: 1.25em;
+}
+
+#parcours .parcours-poste li {
+  padding-left: 0.25em;
+  line-height: 1.65;
+}
+
+@media screen and (max-width: 736px) {
+  #parcours .parcours-poste {
+    padding: 1em;
+  }
+
+  #parcours .parcours-frise {
+    padding-left: 24px;
+  }
+
+  #parcours .parcours-frise > li::before {
+    left: -32px;
+  }
+}
