@@ -2451,3 +2451,41 @@ body {
     left: -32px;
   }
 }
+/* Compétences linguistiques */
+#competences .langues-grille {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+#competences .langues-grille > li {
+  padding: 1.4rem;
+  border: 1px solid rgba(22, 55, 74, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+#competences .langues-grille h3 {
+  margin: 0 0 0.4rem;
+}
+
+#competences .langues-grille p {
+  margin: 0 0 0.75rem;
+}
+
+#competences .langues-grille p:last-child {
+  margin-bottom: 0;
+}
+
+#competences .langue-niveau {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 736px) {
+  #competences .langues-grille {
+    grid-template-columns: 1fr;
+  }
+}
