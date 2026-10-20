@@ -20,7 +20,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>Accueil</span></a>
-<a href="#work" class="icon solid fa-folder"><span>À propos</span></a>
+<a href="#work" class="icon solid fa-user"><span>À propos</span></a>
 <a href="#parcours" class="icon solid fa-graduation-cap"><span>Parcours</span></a>
 <a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
 					</nav>
@@ -32,10 +32,12 @@
 							<article id="home" class="panel intro">
 								<header>
 									<h1>Sarah-Jade Lachance</h1>
+									<p>Maîtrise en relations internationales<br>
+Université Laval</p>
 								</header>
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
+									<img src="images/moi.jpeg" alt="Portrait de Sarah-Jade Lachance" />
 								</a>
 							</article>
 
@@ -43,33 +45,183 @@
 							<article id="work" class="panel">
   <header>
     <h2>À propos de moi</h2>
+    <p>Mes voyages et mes expériences à travers le monde.</p>
   </header>
 
-  <p>
-    Je m’appelle Sarah-Jade Lachance et je suis étudiante à la maîtrise
-    en relations internationales à l’École supérieure d’études
-    internationales de l’Université Laval.
-  </p>
-<p>
-  Je suis actuellement à l’étape des cours de ma maîtrise.
-  Je prévois de consacrer la prochaine année à la rédaction
-  de mon mémoire.
-</p>
-  <p>
-    Je m’intéresse principalement à l’autonomisation économique
-    des femmes au Moyen-Orient et en Afrique du Nord (région MENA).
-  </p>
+  <div class="voyage-navigation">
+    <button type="button" id="voyage-precedent"
+      aria-label="Pays précédent" disabled>←</button>
 
-  <p>Ce site présente mon parcours et mes projets.</p>
-  <h3>Langues et ouverture internationale</h3>
-  <header>
-  <p>
-    J’ai vécu aux États-Unis pendant un an et demi, une expérience
-    qui m’a permis de développer une très bonne maîtrise de l’anglais.
-    J’ai également étudié l’espagnol et le russe et j’apprends
-    actuellement l’arabe.
-  </p>
-						</article>
+    <p id="voyage-compteur" role="status"
+      aria-live="polite">1 / 7 · États-Unis</p>
+
+    <button type="button" id="voyage-suivant"
+      aria-label="Pays suivant">→</button>
+  </div>
+
+  <div id="voyages-contenu">
+
+    <!-- ÉTATS-UNIS -->
+    <section class="voyage-page" data-pays="États-Unis">
+      <h3>États-Unis</h3>
+      <p class="voyage-date">Janvier 2021 — juillet 2022</p>
+
+      <p>
+        Le 6 janvier 2021, je suis partie aux États-Unis pour
+        apprendre l’anglais et travailler comme jeune fille au pair.
+        J’ai vécu au sein de deux familles.
+      </p>
+
+      <div class="voyage-photos">
+        <figure>
+          <img src="images/etat-unis1.jpeg"
+            alt="Souvenir de mon séjour à Long Island">
+          <figcaption>
+            <h4>Long Island, New York</h4>
+            <p class="voyage-date">Janvier à août 2021</p>
+            <p>
+              Ma première famille vivait à Long Island,
+              où je m’occupais de deux jeunes enfants.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/etat-unis2.jpg"
+            alt="Souvenir de mon séjour à Washington">
+          <figcaption>
+            <h4>Washington, D.C.</h4>
+            <p class="voyage-date">Août 2021 à juillet 2022</p>
+            <p>
+              J’ai ensuite rejoint une deuxième famille à
+              Washington, où j’étais responsable de deux adolescentes.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <p>
+        Ce séjour d’un an et demi m’a permis de développer
+        une très bonne maîtrise de l’anglais.
+      </p>
+    </section>
+
+    <!-- COSTA RICA -->
+    <section class="voyage-page" data-pays="Costa Rica" hidden>
+      <h3>Costa Rica</h3>
+      <p class="voyage-date">Janvier–février 2023 · Tamarindo</p>
+      <p>
+        J’ai passé trois semaines à Tamarindo dans le cadre
+        d’un programme d’espagnol avec EF Education.
+        Ce séjour associait l’apprentissage de la langue
+        à la découverte du Costa Rica.
+      </p>
+      <figure class="voyage-photo-seule">
+        <img src="images/costarica.JPG"
+          alt="Souvenir de mon séjour au Costa Rica"
+          loading="lazy">
+      </figure>
+    </section>
+
+    <!-- FRANCE -->
+    <section class="voyage-page" data-pays="France" hidden>
+      <h3>France</h3>
+      <p class="voyage-date">Deux séjours · 2023 et 2026</p>
+
+      <div class="voyage-photos">
+        <figure>
+          <img src="images/france1.jpeg"
+            alt="Souvenir de mon voyage en France en août 2023"
+            loading="lazy">
+          <figcaption>
+            <h4>Août 2023 · Voyage en solo</h4>
+            <p>
+              J’ai voyagé seule en France, où j’ai notamment
+              visité le château de Versailles, le musée
+              du Louvre et Disneyland Paris.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/france2.png"
+            alt="Souvenir de mon séjour en France en mai 2026"
+            loading="lazy">
+          <figcaption>
+            <h4>Mai 2026 · Séjour familial</h4>
+            <p>
+              Je suis retournée en France pour rendre visite
+              à la famille de mon conjoint.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- MALTE -->
+    <section class="voyage-page" data-pays="Malte" hidden>
+      <h3>Malte</h3>
+      <p class="voyage-date">Août 2023</p>
+      <p>
+        Après mon voyage en France, j’ai poursuivi
+        mon séjour à Malte.
+      </p>
+      <figure class="voyage-photo-seule">
+        <img src="images/malte.jpeg"
+          alt="Souvenir de mon voyage à Malte"
+          loading="lazy">
+      </figure>
+    </section>
+
+    <!-- ALLEMAGNE -->
+    <section class="voyage-page" data-pays="Allemagne" hidden>
+      <h3>Allemagne</h3>
+      <p class="voyage-date">Août 2023 · Francfort</p>
+      <p>
+        Après mon séjour à Malte, je suis allée à Francfort
+        rendre visite à une bonne amie rencontrée
+        pendant mon séjour aux États-Unis.
+      </p>
+      <figure class="voyage-photo-seule">
+        <img src="images/allemagne.jpeg"
+          alt="Souvenir de mon voyage en Allemagne"
+          loading="lazy">
+      </figure>
+    </section>
+
+    <!-- MEXIQUE -->
+    <section class="voyage-page" data-pays="Mexique" hidden>
+      <h3>Mexique</h3>
+      <p class="voyage-date">Mai 2025 · Tulum</p>
+      <p>
+        En mai 2025, je suis partie au Mexique avec un groupe
+        d’amis. Nous avons séjourné à Tulum.
+      </p>
+      <figure class="voyage-photo-seule">
+        <img src="images/mexique.jpeg"
+          alt="Souvenir de mon voyage au Mexique"
+          loading="lazy">
+      </figure>
+    </section>
+
+    <!-- GRÈCE -->
+    <section class="voyage-page" data-pays="Grèce" hidden>
+      <h3>Grèce</h3>
+      <p class="voyage-date">Mai 2026 · Mykonos, Paros et Santorin</p>
+      <p>
+        Après mon deuxième séjour en France, j’ai poursuivi
+        le voyage en Grèce. Nous avons visité trois îles :
+        Mykonos, Paros et Santorin.
+      </p>
+      <figure class="voyage-photo-seule">
+        <img src="images/grece.JPG"
+          alt="Souvenir de mon voyage en Grèce"
+          loading="lazy">
+      </figure>
+    </section>
+
+  </div>
+</article>
 <article id="parcours" class="panel">
   <header>
     <h2>Mon parcours</h2>
@@ -127,7 +279,7 @@
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; 2026 Sarah-Jade Lachance.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 
@@ -139,6 +291,118 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<script>
+(function () {
+  const rubrique = document.getElementById("work");
+  const contenu = document.getElementById("voyages-contenu");
+  const precedent = document.getElementById("voyage-precedent");
+  const suivant = document.getElementById("voyage-suivant");
+  const compteur = document.getElementById("voyage-compteur");
 
+  if (!rubrique || !contenu || !precedent || !suivant || !compteur) {
+    return;
+  }
+
+  const pages = Array.from(
+    contenu.querySelectorAll(".voyage-page")
+  );
+
+  if (pages.length === 0) return;
+
+  let position = 0;
+
+  function afficherPays(numero, deplacement) {
+    position = Math.max(0, Math.min(numero, pages.length - 1));
+
+    pages.forEach(function (page, index) {
+      page.hidden = index !== position;
+      page.tabIndex = -1;
+    });
+
+    precedent.disabled = position === 0;
+    suivant.disabled = position === pages.length - 1;
+
+    compteur.textContent =
+      (position + 1) + " / " + pages.length +
+      " · " + pages[position].dataset.pays;
+
+    if (deplacement) {
+      pages[position].focus({ preventScroll: true });
+
+      const navigation = rubrique.querySelector(".voyage-navigation");
+
+      if (navigation.getBoundingClientRect().top < 0) {
+        navigation.scrollIntoView({
+          block: "start",
+          behavior: "auto"
+        });
+      }
+    }
+  }
+
+  precedent.addEventListener("click", function () {
+    afficherPays(position - 1, true);
+  });
+
+  suivant.addEventListener("click", function () {
+    afficherPays(position + 1, true);
+  });
+
+  /* Navigation au clavier lorsque cette rubrique a le focus */
+  rubrique.addEventListener("keydown", function (event) {
+    if (event.altKey || event.ctrlKey || event.metaKey) return;
+
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      afficherPays(position + 1, true);
+    }
+
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      afficherPays(position - 1, true);
+    }
+  });
+
+  /* Balayage horizontal sur téléphone ou tablette */
+  contenu.style.touchAction = "pan-y";
+  let debut = null;
+
+  contenu.addEventListener("pointerdown", function (event) {
+    if (!event.isPrimary || event.pointerType === "mouse") return;
+
+    debut = {
+      x: event.clientX,
+      y: event.clientY
+    };
+
+    contenu.setPointerCapture(event.pointerId);
+  });
+
+  contenu.addEventListener("pointerup", function (event) {
+    if (!debut) return;
+
+    const horizontal = event.clientX - debut.x;
+    const vertical = event.clientY - debut.y;
+
+    if (
+      Math.abs(horizontal) > 60 &&
+      Math.abs(horizontal) > Math.abs(vertical) * 1.4
+    ) {
+      afficherPays(
+        position + (horizontal < 0 ? 1 : -1),
+        true
+      );
+    }
+
+    debut = null;
+  });
+
+  contenu.addEventListener("pointercancel", function () {
+    debut = null;
+  });
+
+  afficherPays(0, false);
+})();
+</script>
 	</body>
 </html>
