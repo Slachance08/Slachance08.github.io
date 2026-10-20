@@ -1,3 +1,37 @@
+# Site personnel de Sarah-Jade Lachance
+
+Site personnel réalisé dans le cadre du cours d’outils numériques POL-6078 à l’Université Laval.
+
+## Consulter le site
+
+https://slachance08.github.io/
+
+## Sections du site
+
+- Présentation personnelle
+- À propos de moi et expériences de voyage
+- Parcours académique et professionnel
+- Compétences linguistiques
+- Contact
+
+## Personnalisation réalisée
+
+- Adaptation du contenu et de la navigation en français
+- Personnalisation des couleurs et de l’arrière-plan
+- Présentation du parcours sous forme de frise
+- Présentation des langues sous forme de cartes
+- Ajout de liens courriel et LinkedIn dans le pied de page
+- Remplacement du formulaire de contact par un lien courriel
+
+## Crédits
+
+Site adapté d’un template de [HTML5 UP](https://html5up.net/).
+Les crédits et les fichiers de licence du template sont conservés.
+
+---
+
+## Guide du cours original
+
 # Créer votre site web avec GitHub Pages
 
 Bienvenue ! Ce guide vous expliquera comment utiliser GitHub Pages pour créer votre propre site web personnel en utilisant n'importe quel template HTML. 
