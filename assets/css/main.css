@@ -2505,3 +2505,14 @@ body {
 #home .liens-contact a:hover {
   color: #287c9e;
 }
+#footer .copyright a.icon {
+  display: inline-block;
+  font-size: 1.4em;
+  color: #ffffff;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+#footer .copyright a.icon:hover {
+  color: #8ed8f8;
+}
