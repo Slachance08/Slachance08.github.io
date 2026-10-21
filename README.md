@@ -28,6 +28,16 @@ https://slachance08.github.io/
 Site adapté d’un template de [HTML5 UP](https://html5up.net/).
 Les crédits et les fichiers de licence du template sont conservés.
 
+## Utilisation de l’intelligence artificielle
+
+J’ai utilisé Notion AI comme outil d’accompagnement pour la
+personnalisation de ce site. L’IA m’a aidée à reformuler certains
+textes, à adapter du code HTML et CSS, ainsi qu’à comprendre les
+étapes de publication avec Git et GitHub Pages.
+
+J’ai intégré les modifications et vérifié leur rendu.
+Les informations personnelles et les expériences présentées
+sur ce site sont les miennes.
 ---
 
 ## Guide du cours original
